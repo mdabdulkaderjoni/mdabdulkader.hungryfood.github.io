@@ -127,4 +127,5 @@ ul{
   margin-left: 10px;
   border: 2px solid rgb(88, 151, 88);
   border-radius: 5px;
+  cursor: pointer;
 }
