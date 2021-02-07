@@ -14,7 +14,7 @@ submit.addEventListener('click', () => {
     let getName = input[0];
 
     if(input.length==0){
-        swal("Nothing Found!", "Please Search Agian!", "info");
+        swal("Empty Input!", "Please Search Agian!", "info");
     }
     else if (input.length == 1) {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${getName}`)
@@ -31,7 +31,7 @@ submit.addEventListener('click', () => {
 
     let displayItems = items => {
         if(items.meals==null){
-            swal("Invalid Item Name!", "Please Search Agian!", "info");
+            swal("Item Not Available!", "Please Search Something Else!", "info");
 
         }
         const mainDiv = document.getElementById('mainDiv');
@@ -60,22 +60,21 @@ submit.addEventListener('click', () => {
                         itemDiv.setAttribute("id", "itemInfo");
                         
                         let incredient=items.meals[item];
+                        let icon=`<i class="fa fa-check-circle" aria-hidden="true"></i>`
                         const itemInfo = `
                         
                         
                         <img src="${items.meals[item].strMealThumb}">
                         <h2>${incredient.strMeal}</h2>
                         <ul>
-                        <li>${incredient.strMeasure1} ${incredient.strIngredient1}</li>
-                        <li>${incredient.strMeasure2} ${incredient.strIngredient2}</li>
-                        <li>${incredient.strMeasure3} ${incredient.strIngredient3}</li>
-                        <li>${incredient.strMeasure4} ${incredient.strIngredient4}</li>
-                        <li>${incredient.strMeasure5} ${incredient.strIngredient5}</li>
-                        <li>${incredient.strMeasure6} ${incredient.strIngredient6}</li>
+                        <li>${icon}  ${incredient.strMeasure1} ${incredient.strIngredient1}</li>
+                        <li>${icon}  ${incredient.strMeasure2} ${incredient.strIngredient2}</li>
+                        <li>${icon}  ${incredient.strMeasure3} ${incredient.strIngredient3}</li>
+                        <li>${icon}  ${incredient.strMeasure4} ${incredient.strIngredient4}</li>
+                        <li>${icon}  ${incredient.strMeasure5} ${incredient.strIngredient5}</li>
+                        <li>${icon}  ${incredient.strMeasure6} ${incredient.strIngredient6}</li>
                         <ul>
-
-                        
-                      
+ 
                         `;
                         itemDiv.innerHTML = itemInfo;
                         subDiv.appendChild(itemDiv);

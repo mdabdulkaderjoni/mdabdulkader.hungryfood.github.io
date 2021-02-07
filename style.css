@@ -82,7 +82,7 @@ h1,h2{
     
     position: absolute;
     top:130px;
-    left: 35%;
+    left: 37%;
     width: 330px;
     word-wrap: break-word;
     padding: 10px;
@@ -99,4 +99,13 @@ h1,h2{
     height: 280px;
     border-radius: 8px;
     
+}
+ul{
+    list-style-type: none;
+}
+.fa-check-circle{
+   
+    color: rgb(221, 91, 68);
+    background-color: white;
+    border-radius: 50%;
 }
