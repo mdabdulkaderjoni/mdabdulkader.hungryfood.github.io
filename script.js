@@ -27,8 +27,7 @@ submit.addEventListener('click', () => {
             .then(data => displayItems(data))
             
     }
-
-
+    //displayItems function to display items list
     let displayItems = items => {
         if(items.meals==null){
             swal("Item Not Available!", "Please Search Something Else!", "info");
@@ -49,7 +48,7 @@ submit.addEventListener('click', () => {
             itemDiv.innerHTML = itemInfo;
             mainDiv.appendChild(itemDiv);
 
-            //calling showInfo for info event 
+            //calling IIFE function to showInfo for info event 
                 (()=>{
                     itemDiv.addEventListener('click', () => {
                         document.getElementById('mainDiv').style.display = 'none';
@@ -78,8 +77,7 @@ submit.addEventListener('click', () => {
                         `;
                         itemDiv.innerHTML = itemInfo;
                         subDiv.appendChild(itemDiv);
-                
-                
+ 
                 
                     })
                 })()
