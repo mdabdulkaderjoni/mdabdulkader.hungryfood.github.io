@@ -64,6 +64,7 @@ submit.addEventListener('click', () => {
  
                         <img src="${items.meals[item].strMealThumb}">
                         <h2>${incredient.strMeal}</h2>
+                        <h4>Incredients</h4>
                         <ul>
                         <li>${icon}  ${incredient.strMeasure1} ${incredient.strIngredient1}</li>
                         <li>${icon}  ${incredient.strMeasure2} ${incredient.strIngredient2}</li>
