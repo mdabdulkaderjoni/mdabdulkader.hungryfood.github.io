@@ -11,15 +11,9 @@ submit.addEventListener('click', () => {
     reSetAll(); 
 
     let input = document.getElementById('getName').value;
-    let getName = input[0];
 
     if(input.length==0){
         swal("Empty Input!", "Please Search Agian!", "info");
-    }
-    else if (input.length == 1) {
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${getName}`)
-            .then(res => res.json())
-            .then(data => displayItems(data))
     }
     else {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`)
@@ -77,7 +71,6 @@ submit.addEventListener('click', () => {
                         `;
                         itemDiv.innerHTML = itemInfo;
                         subDiv.appendChild(itemDiv);
- 
                 
                     })
                 })()
