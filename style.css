@@ -119,3 +119,12 @@ ul{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+/* back button style */
+#back-btn{
+  background-color:rgb(66, 148, 100);
+  color: white;
+  margin-left: 10px;
+  border: 2px solid rgb(88, 151, 88);
+  border-radius: 5px;
+}

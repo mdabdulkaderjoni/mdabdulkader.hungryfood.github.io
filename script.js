@@ -79,6 +79,16 @@ submit.addEventListener('click', () => {
     }
 })
 
+//event listener for back button
+const backBtn=document.getElementById('back-btn');
+
+backBtn.addEventListener('click',()=>{
+    document.getElementById('subDiv').style.display='none';
+    document.getElementById('mainDiv').style.display='grid';
+})
+
+
+
 
 
 
