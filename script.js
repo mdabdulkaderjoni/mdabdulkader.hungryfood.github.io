@@ -61,8 +61,7 @@ submit.addEventListener('click', () => {
                         let incredient=items.meals[item];
                         let icon=`<i class="fa fa-check-circle" aria-hidden="true"></i>`
                         const itemInfo = `
-                        
-                        
+ 
                         <img src="${items.meals[item].strMealThumb}">
                         <h2>${incredient.strMeal}</h2>
                         <ul>
