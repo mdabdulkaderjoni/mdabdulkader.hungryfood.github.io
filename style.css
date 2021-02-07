@@ -42,7 +42,7 @@ h1,h2{
   width: 30%;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 46%;
   transform: translate(-50%, -50%);
 }
 
@@ -82,7 +82,7 @@ h1,h2{
     
     position: absolute;
     top:130px;
-    left: 37%;
+    left: 33%;
     width: 330px;
     word-wrap: break-word;
     padding: 10px;
@@ -108,4 +108,11 @@ ul{
     color: rgb(221, 91, 68);
     background-color: white;
     border-radius: 50%;
+}
+
+#banner{
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
